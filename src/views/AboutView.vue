@@ -1,5 +1,23 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div>
+    <Header></Header>
+    <el-container>
+      <el-aside width="200px">Aside</el-aside>
+      <el-main>Main</el-main>
+    </el-container>
+    <footer></footer>
   </div>
 </template>
+<script>
+import Header from "@/components/Header";
+import Footer from "../components/Footer"
+
+export default {
+
+  name: 'about',
+  components: {
+    Header,
+    Footer
+  },
+}
+</script>
